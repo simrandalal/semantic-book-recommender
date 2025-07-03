@@ -25,7 +25,14 @@ A powerful content-based book recommendation system that leverages semantic simi
 
 ---
 
-## 🗂️ Project Structure ```plaintext semantic-book-recommender/ ├── app.py # Streamlit app ├── semantic.py # core recommendation logic ├── data/ # dataset folder (excluded) ├── requirements.txt ├── .gitignore ├── .env # (excluded) ├── screenshots/ # UI screenshots └── README.md ``` 
+## 🗂️ Project Structure 
+├── app.py # Streamlit app
+├── semantic.py # core recommendation logic
+├── data/ # dataset folder (excluded)
+├── requirements.txt
+├── .gitignore
+├── .env # (excluded)
+└── README.md
 
 
 ## ⚙️ Setup & Installation
