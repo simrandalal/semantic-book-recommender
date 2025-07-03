@@ -2,7 +2,29 @@
 
 A powerful content-based book recommendation system that leverages semantic similarity using state-of-the-art language models. Instead of relying on keyword matches, it understands the *meaning* of a user query and returns the most relevant books.
 
+---**How it works:**
+
+- **Text Embedding**  
+  The system uses a transformer-based model from Hugging Face (Sentence Transformers) to convert book descriptions into dense vector representations, capturing their semantic meaning.
+
+- **Query Vectorization**  
+  When a user enters a search query, it is also converted to a vector using the same model, so both books and queries are in the same semantic space.
+
+- **Similarity Search**  
+  The recommender calculates the cosine similarity between the query vector and each book’s description vector. Cosine similarity is a mathematical metric that measures the angle between two vectors in a high-dimensional space:
+  - a cosine score close to 1 means they are very similar
+  - a cosine score close to 0 means they are unrelated
+
+- **Ranking and Recommendation**  
+  The system ranks all books by their similarity score to the user query and shows the most relevant recommendations.
+
+- **Streamlit User Interface**  
+  The final results are displayed through an intuitive Streamlit web app, where users can input their queries and immediately see recommendations with book details.
+
 ---
+
+
+
 
 ## 🚀 Features
 
@@ -24,15 +46,6 @@ A powerful content-based book recommendation system that leverages semantic simi
 - dotenv
 
 ---
-
-## 🗂️ Project Structure 
-├── app.py # Streamlit app
-├── semantic.py # core recommendation logic
-├── data/ # dataset folder (excluded)
-├── requirements.txt
-├── .gitignore
-├── .env # (excluded)
-└── README.md
 
 
 ## ⚙️ Setup & Installation
